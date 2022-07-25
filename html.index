@@ -48,12 +48,14 @@ document.getElementById('button').addEventListener('click', (event) => {
 document.getElementById('button1').addEventListener('click', (event) => {
   event.target.innerText = Earnings.reduce((a,b) => a+b, 0);
   event.target.style.color = '#3366ff';
+  event.target.style.backgroundColor = '#66ff99';
 
 });
 
 document.getElementById('button2').addEventListener('click', (event) => {
   event.target.innerText = Expenses.reduce((a,b) => a+b, 0);
   event.target.style.color = '#ff0000';
+  event.target.style.backgroundColor = '#ffff99';
 
 });
 Balance;
@@ -62,6 +64,7 @@ Balance;
 document.getElementById('button3').addEventListener('click', (event) => {
   event.target.innerText = Balance.reduce((a,b) => a+b, 0);
   event.target.style.color = '#33ff33';
+  event.target.setAttribute("src", '#999999');
 
 });
 </script>
